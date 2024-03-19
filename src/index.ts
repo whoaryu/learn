@@ -25,18 +25,18 @@ app.use("/api/v1", router)
 
 
 // Mongo Connection
-const mongoURI = process.env.MONGO_DB_URI
+// const mongoURI = process.env.MONGO_DB_URI
 
-if(!mongoURI){
-    console.error("MongoDB URL is not defined")
-    process.exit(1);
-}
-mongoose.connect(mongoURI, {}).then(() => {
-    console.log("MongoDB is connected");
-})
-.catch((error) => {
-    console.log(error)
-});
+// if(!mongoURI){
+//     console.error("MongoDB URL is not defined")
+//     process.exit(1);
+// }
+// mongoose.connect(mongoURI, {}).then(() => {
+//     console.log("MongoDB is connected");
+// })
+// .catch((error) => {
+//     console.log(error)
+// });
 
 
 
